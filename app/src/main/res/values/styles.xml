@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="baseStyle"></style>
+
+
+    <style name="style.chy.button" parent="baseStyle">
+        <item name="android:background">@drawable/select_chy_btn_bg</item>
+        <item name="android:textColor">@drawable/select_chy_text_bg</item>
+    </style>
+
+    <style name="style.chy.editText" parent="baseStyle">
+        <item name="android:layout_marginTop">@dimen/dp_2</item>
+        <item name="android:layout_marginBottom">@dimen/dp_2</item>
+        <item name="android:background">@drawable/select_chy_edit_bg</item>
+    </style>
+
+    <style name="style.chy.textView" parent="baseStyle">
+        <item name="android:textColor">@color/color_chy_text_black</item>
+        <item name="android:layout_marginTop">@dimen/dp_2</item>
+        <item name="android:layout_marginBottom">@dimen/dp_2</item>
+        <item name="android:textSize">@dimen/dp_17</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/scale_bottom_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_bottom_zoom_out</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="PopWindowAnimStyle">
+        <item name="android:windowShowAnimation">@anim/dialog_enter</item>
+        <!-- 指定显示的动画xml  -->
+        <item name="android:windowHideAnimation">@anim/dialog_exit</item>
+        <!-- 指定消失的动画xml  -->
+    </style>
+    <style name="TransDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:background">@android:color/transparent</item> -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="WhiteDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- <item name="android:background">@android:color/transparent</item> -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="mypopwindow_bottomIn" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_bottom_out</item>
+    </style>
+    <style name="mypopwindow_bottom_scale">
+        <item name="android:windowEnterAnimation">@anim/scale_bottom_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_bottom_zoom_out</item>
+    </style>
+    <style name="mypopwindow_center_scale">
+        <item name="android:windowEnterAnimation">@anim/scale_center_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_center_zoom_out</item>
+    </style>
+    <style name="mypopwindow_left_scale">
+        <item name="android:windowEnterAnimation">@anim/scale_left_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_left_zoom_out</item>
+    </style>
+    <style name="mypopwindow_leftbottom_scale">
+        <item name="android:windowEnterAnimation">@anim/scale_leftbottom_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_leftbottom_zoom_out</item>
+    </style>
+    <style name="mypopwindow_topIn">
+        <item name="android:windowEnterAnimation">@anim/translate_top_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_top_out</item>
+    </style>
+    <style name="mypopwindow_top_scale">
+        <item name="android:windowEnterAnimation">@anim/scale_top_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_top_zoom_out</item>
+    </style>
+    <style name="popupWindow_LeftIn" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_left_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_left_out</item>
+    </style>
+    <style name="popupWindow_fadeIn" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_fade_out</item>
+    </style>
+    <style name="popupWindow_rightIn" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_right_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_right_alpha_out</item>
+    </style>
+    <style name="popupWindow_right_left" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_right_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_left_alpah_out</item>
+    </style>
+    <style name="popupWindow_top_bottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/translate_top_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_bottom_alpha_out</item>
+    </style>
+</resources>

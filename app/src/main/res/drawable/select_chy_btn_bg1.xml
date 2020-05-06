@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <!--圆角-->
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:radius="9dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp"/><!-- 设置圆角半径 -->
+
+            <solid
+                android:color="@color/color_chy_btn_press"/><!-- 填充的颜色 -->
+
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/color_chy_stroke"
+                android:dashWidth="0dp"
+                android:dashGap="0dp"/>
+        </shape>
+
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:radius="9dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp"/><!-- 设置圆角半径 -->
+            <!-- 填充 -->
+            <solid
+                android:color="@color/color_chy_btn_press"/><!-- 填充的颜色 -->
+
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/color_chy_stroke"
+                android:dashWidth="0dp"
+                android:dashGap="0dp"/>
+        </shape>
+    </item>
+    <item  android:state_enabled="true">
+        <shape>
+            <!--圆角-->
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:radius="9dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp"/><!-- 设置圆角半径 -->
+            <!-- 填充 -->
+            <solid
+                android:color="@color/color_chy_btn_default"/><!-- 填充的颜色 -->
+
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/color_chy_stroke"
+                android:dashWidth="0dp"
+                android:dashGap="0dp"/>
+        </shape>
+    </item>
+    <item  android:state_enabled="false">
+        <shape>
+            <!--圆角-->
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"
+                android:radius="9dp"
+                android:topLeftRadius="5dp"
+                android:topRightRadius="5dp"/><!-- 设置圆角半径 -->
+
+            <!-- 填充 -->
+            <solid
+                android:color="#cccccc"/><!-- 填充的颜色 -->
+
+            <!-- 描边 -->
+            <stroke
+                android:width="@dimen/dp_1"
+                android:color="@color/color_chy_stroke"
+                android:dashWidth="0dp"
+                android:dashGap="0dp"/>
+        </shape>
+    </item>
+</selector>
